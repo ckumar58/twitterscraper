@@ -34,8 +34,7 @@ def get_user_info(twitter_user):
 
 def main():
     start = time.time()
-    users = ['Carlos_F_Enguix', 'mmtung', 'dremio', 'MongoDB', 'JenWike', 'timberners_lee','ataspinar2', 'realDonaldTrump',
-            'BarackObama', 'elonmusk', 'BillGates', 'BillClinton','katyperry','KimKardashian']
+    users = ['narendramodi']
 
     pool = Pool(8)    
     for user in pool.map(get_user_info,users):
